@@ -8,8 +8,55 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="./public/logo.png">
+  <style>
+    :root {
+      --nikon-yellow: #ffde00;
+    }
+    .container {
+      min-height: 100vh;
+    }
+    .header {
+      height: 100px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .footer {
+      height: 300px;
+    }
+    .login-section, .catalog-section, .about-section {
+      height: 500px;
+    }
+    .headerText:hover {
+      border-bottom: 5px solid var(--nikon-yellow);
+      padding-bottom: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+  <div class="container-fluid p-0">
+    <nav class="header bg-white d-flex sticky-top align-items-center p-3">
+      <img src="./public/logo.png" alt="Nikon Logo" style="width: 80px;">
+      <h5 class="headerText ms-3 text-uppercase mb-0">dashboard</h5>
+      <h5 class="headerText ms-3 text-uppercase mb-0">course catalogue</h5>
+      <h5 class="headerText ms-3 text-uppercase mb-0">my badges</h5>
+      <h5 class="headerText ms-3 me-3 text-uppercase mb-0">events</h5>
+      <h5 class="headerText text-uppercase ms-auto mb-0">login</h5>
+    </nav>
+    <main class="main p-3">
+      <section aria-label="Login and Hero Image" class="login-section d-flex align-items-center justify-content-center">
+        <p>Login Section</p>
+      </section>
+      <section aria-label="Course Catalog" class="catalog-section d-flex align-items-center justify-content-center">
+        <p>Course Catalog Section</p>
+      </section>
+      <section aria-label="About Video" class="about-section d-flex align-items-center justify-content-center">
+        <p>About Video Section</p>
+      </section>
+    </main>
+    <footer class="footer text-center d-flex align-items-center justify-content-center">
+      <p>Footer Content</p>
+    </footer>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
